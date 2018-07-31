@@ -15,7 +15,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        
+        //create a window Object
+        window = UIWindow()
+        
+        //Make the window visible
+        window?.makeKeyAndVisible()
+        
+        //set up the view controller
+        window?.rootViewController = UINavigationController(rootViewController: ContactsViewController())
+        
         return true
     }
 
